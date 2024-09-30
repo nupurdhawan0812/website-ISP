@@ -30,6 +30,17 @@ public class UserController {
     public String i() {
         return "dashboard";
     }
+
+    @GetMapping("/index")
+    public String index() {
+        return "index";
+    }
+
+    @GetMapping("/about")
+    public String about() {
+        return "about";
+    }
+
     @GetMapping("/check")
     public String check() {
         return "check";
