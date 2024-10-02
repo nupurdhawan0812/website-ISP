@@ -26,14 +26,35 @@ public class UserController {
     Logger logger = LoggerFactory.getLogger(UserController.class);
 
 
-    @GetMapping("/dashboard")
-    public String i() {
-        return "dashboard";
+    @GetMapping("/contact")
+    public String contact() {
+        return "contact";
     }
+
+    @GetMapping("/mentoring_training")
+    public String mentoringNTraining() {
+        return "mentoring_training";
+    }
+
+    @GetMapping("/operations")
+    public String operations() {
+        return "operations";
+    }
+
+    @GetMapping("/shristinagar_tbi")
+    public String shristiNagarnTbi() {
+        return "shristinagar_tbi";
+    }
+
 
     @GetMapping("/index")
     public String index() {
         return "index";
+    }
+
+    @GetMapping("/dashboard")
+    public String dashboard() {
+        return "dashboard";
     }
 
     @GetMapping("/about")

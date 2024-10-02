@@ -32,7 +32,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/","/about","/index","/login","/register", "/css/**", "/js/**", "/img/**","/lib/**").permitAll()
+                        .requestMatchers("/","/about","/contact","/mentoring_training","/operations","/shristinagar_tbi","/index","/login","/register", "/css/**", "/js/**", "/img/**","/lib/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
